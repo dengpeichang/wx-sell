@@ -27,4 +27,13 @@ public class ProductCategoryRepositoryTest {
         productCategory.setCategoryType(1);
         repository.save(productCategory);
     }
+
+    @Test
+    public void update(){
+        ProductCategory productCategory = repository.findOne(5);
+        productCategory.setCategoryType(11);
+        repository.save(productCategory);
+    }
+
+
 }

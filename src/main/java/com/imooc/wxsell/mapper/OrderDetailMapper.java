@@ -7,20 +7,6 @@ import org.apache.ibatis.annotations.*;
 @Mapper
 public interface OrderDetailMapper extends MyMapper<OrderDetail> {
 
-//    @Select("select * from order_detail where order_id =#{orderId}")
-//    @Results({
-//            @Result(column = "order_id", property = "orderId"),
-//            @Result(column = "buyer_name", property = "buyerName"),
-//            @Result(column = "buyer_phone", property = "buyerPhone"),
-//            @Result(column = "buyer_address", property = "buyerAddress"),
-//            @Result(column = "buyer_openid", property = "buyerOpenid"),
-//            @Result(column = "order_amount", property = "orderAmount"),
-//            @Result(column = "order_status", property = "orderStatus"),
-//            @Result(column = "pay_status", property = "payStatus"),
-//            @Result(column = "create_time", jdbcType = JdbcType.TIMESTAMP, property = "createTime", javaType=Date.class),
-//            @Result(column = "update_time", jdbcType = JdbcType.TIMESTAMP, property = "updateTime", javaType=Date.class)
-//    })
-//    List<OrderDetail> findByOrderId(String orderId);
 //
 //
 //    @Select("select * from order_detail")

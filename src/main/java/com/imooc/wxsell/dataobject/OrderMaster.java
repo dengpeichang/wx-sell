@@ -5,6 +5,7 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
@@ -23,7 +24,7 @@ public class OrderMaster {
     /**买家微信openid*/
     private String buyerOpenid;
     /**订单总金额*/
-    private double orderAmount;
+    private BigDecimal orderAmount;
     /**订单状态, 默认为新下单*/
     private int orderStatus;
     /**支付状态, 默认未支付*/

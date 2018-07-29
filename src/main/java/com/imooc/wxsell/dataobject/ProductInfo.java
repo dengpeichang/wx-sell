@@ -4,8 +4,8 @@ import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.math.BigDecimal;
 import java.util.Date;
 @Entity
 @DynamicUpdate
@@ -17,7 +17,7 @@ public class ProductInfo {
     /**产品名称*/
     private String productName;
     /**价格*/
-    private double productPrice;
+    private BigDecimal productPrice;
     /**库存*/
     private int productStock;
     /**产品描述*/

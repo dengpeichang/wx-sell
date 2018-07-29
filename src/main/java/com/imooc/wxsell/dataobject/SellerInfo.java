@@ -10,15 +10,15 @@ import java.util.Date;
 @Entity
 @DynamicUpdate
 @Data
-public class SellInfo {
+public class SellerInfo {
     @Id
     private String id;
     /**用户名*/
     private String username;
     /**密码*/
-    private double password;
+    private String password;
     /**微信openid*/
-    private int openid;
+    private String openid;
     /**创建时间*/
     private Date createTime;
     /**修改时间*/

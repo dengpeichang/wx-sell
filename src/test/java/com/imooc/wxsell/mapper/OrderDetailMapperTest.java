@@ -25,6 +25,5 @@ public class OrderDetailMapperTest {
     @Test
     public void insert(){
         OrderDetail detail = new OrderDetail();
-        detail.setDetailId("222222");
     }
 }

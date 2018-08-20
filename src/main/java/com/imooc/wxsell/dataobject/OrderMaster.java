@@ -3,6 +3,7 @@ package com.imooc.wxsell.dataobject;
 import lombok.Data;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -12,6 +13,7 @@ import java.util.Date;
 public class OrderMaster {
     /**id*/
     @Id
+    @GeneratedValue(generator = "UUID")
     private String orderId;
     /**买家名字*/
     private String buyerName;

@@ -22,3 +22,9 @@ spring:
 server:
   context-path: /sell
   port: 8080
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql

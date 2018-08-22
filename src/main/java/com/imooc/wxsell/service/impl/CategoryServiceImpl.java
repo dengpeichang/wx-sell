@@ -24,12 +24,17 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public void save(ProductCategory productCategory) {
+    public List<ProductCategory> findAll() {
+        return categoryMapper.selectAll();
+    }
 
+    @Override
+    public void save(ProductCategory productCategory) {
+        categoryMapper.insert(productCategory);
     }
 
     @Override
     public void delete(Integer id) {
-
+        categoryMapper.deleteByPrimaryKey(id);
     }
 }

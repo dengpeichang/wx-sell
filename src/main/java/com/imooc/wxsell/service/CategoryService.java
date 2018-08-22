@@ -10,6 +10,8 @@ public interface CategoryService {
 
     List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryTypes);
 
+    List<ProductCategory> findAll();
+
     void save(ProductCategory productCategory);
 
     void delete(Integer id);
